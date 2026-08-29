@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Intercambiador criogénico para GNL — JAZU DYNAMICS</title>
+<meta name="description" content="Diseño CAD paramétrico y análisis CFD de un intercambiador de calor criogénico para regasificación de GNL.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,400..900&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="sky" aria-hidden="true"></div>
+<div class="stars" aria-hidden="true"></div>
+
+<aside class="alt" aria-hidden="true">
+  <div class="alt__rail"><span class="alt__marks"></span></div>
+  <div class="alt__read"><b id="altVal">35 786</b><span>km</span></div>
+  <div class="alt__zone" id="altZone">Órbita geoestacionaria</div>
+</aside>
+
+<header class="bar">
+  <div class="wrap bar__in">
+    <a class="bar__name" href="index.html">JAZU DYNAMICS</a>
+    <nav class="bar__nav">
+      <a class="back" href="index.html">← Todos los proyectos</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- ============ ENCABEZADO ============ -->
+  <div class="phead">
+    <div class="wrap">
+      <div class="phead__meta">
+        <span class="tag tag--amber">Hoja 01 / 04</span>
+        <span class="tag">Sistemas térmicos · CFD</span>
+        <span class="tag">Ago – Dic 2023</span>
+      </div>
+      <h1>Intercambiador de calor criogénico para regasificación de GNL</h1>
+      <p>Diseño y optimización de un equipo de intercambio térmico entre aire ambiente y gas natural licuado, desarrollado para Diseño y Servicios Criogénicos en Campo Buran, S.A. de C.V.</p>
+
+      <div class="datos">
+        <div class="dato"><b>30 %</b><span>Reducción de volumen</span></div>
+        <div class="dato"><b>CAD</b><span>Paramétrico por ecuaciones</span></div>
+        <div class="dato"><b>CFD</b><span>Interacción con el entorno</span></div>
+        <div class="dato"><b>4 meses</b><span>Duración del proyecto</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="pbody">
+    <div class="wrap">
+
+      <!-- ============ 01 PLANTEAMIENTO ============ -->
+      <section class="part">
+        <div class="part__no"><b>01</b>Planteamiento</div>
+        <div>
+          <h2>El problema</h2>
+          <p>El gas natural licuado se almacena y transporta a temperaturas criogénicas, alrededor de −162 °C. Para inyectarlo a la red de consumo hay que devolverlo a estado gaseoso, y la forma más económica de hacerlo es aprovechar el calor del aire ambiente en lugar de quemar combustible para calentarlo.</p>
+          <p>El reto de un vaporizador de aire ambiente es que el aire es un fluido con muy baja capacidad de transferir calor. Eso obliga a superficies de intercambio enormes, y una superficie enorme significa un equipo grande, caro de transportar y difícil de instalar en campo.</p>
+
+          <div class="todo">
+            <b>Por completar</b>
+            Aquí conviene agregar el requerimiento concreto que te dio la empresa: caudal de GNL a vaporizar, temperatura de salida requerida, y la restricción de espacio o de transporte que motivó el rediseño. Un número específico aquí hace toda la diferencia.
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ 02 DISEÑO ============ -->
+      <section class="part">
+        <div class="part__no"><b>02</b>Diseño</div>
+        <div>
+          <h2>Modelo CAD paramétrico</h2>
+          <p>En lugar de modelar una geometría fija, construí el modelo gobernado por ecuaciones y variables clave. Cambiar el diámetro de tubo, el paso entre aletas o la longitud del haz reconstruía el equipo completo sin volver a dibujar nada.</p>
+          <p>Esa decisión fue la que hizo posible el resto del proyecto: liberó tiempo suficiente para correr análisis CFD en serio, en lugar de gastarlo remodelando cada iteración a mano.</p>
+
+          <figure class="fig">
+            <div class="fig__hueco">Captura del modelo CAD<br>Vista isométrica del equipo completo</div>
+            <figcaption><b>Fig. 01</b> Modelo paramétrico del intercambiador en SolidWorks.</figcaption>
+          </figure>
+
+          <div class="todo">
+            <b>Por completar</b>
+            Describe las decisiones de diseño que tomaste y por qué: geometría de aleta elegida, material, arreglo de los tubos, y qué alternativas descartaste. Lo que un ingeniero quiere leer no es qué hiciste, sino por qué eso y no lo otro.
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ 03 SIMULACIÓN ============ -->
+      <section class="part">
+        <div class="part__no"><b>03</b>Simulación</div>
+        <div>
+          <h2>Análisis CFD y FEM</h2>
+          <p>Simulé la interacción del sistema con el entorno para evaluar cómo se comportaba el intercambio térmico en condiciones reales de operación, no solo en el cálculo analítico.</p>
+          <p>La incorporación de aletas fue la palanca principal: al aumentar el área efectiva de intercambio sin crecer el equipo, permitió reducir sus dimensiones cerca de un 30 % manteniendo el desempeño térmico. Menos volumen se traduce directamente en menor costo de transporte e instalación en sitio.</p>
+
+          <figure class="fig">
+            <div class="fig__hueco">Captura de Ansys Fluent<br>Campo de temperatura o de velocidad</div>
+            <figcaption><b>Fig. 02</b> Distribución de temperatura en la superficie aletada.</figcaption>
+          </figure>
+
+          <figure class="fig">
+            <div class="fig__hueco">Captura de la malla</div>
+            <figcaption><b>Fig. 03</b> Discretización del dominio y refinamiento cerca de las aletas.</figcaption>
+          </figure>
+
+          <div class="todo">
+            <b>Por completar</b>
+            Documenta el montaje de la simulación: modelo de turbulencia usado, condiciones de frontera, tamaño de malla y estudio de independencia de malla si lo hiciste. Esta sección es la que separa a alguien que sabe usar Fluent de alguien que sabe simular.
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ 04 VALIDACIÓN Y CAMPO ============ -->
+      <section class="part">
+        <div class="part__no"><b>04</b>Campo</div>
+        <div>
+          <h2>Del modelo al equipo</h2>
+          <div class="todo">
+            <b>Por completar</b>
+            Si llegaste a fabricación, pruebas físicas, planos de taller o visitas a planta, va aquí. Fotos del equipo real, del proceso de armado o de tu visita a las instalaciones. Si el proyecto se quedó en diseño, dilo con claridad: es más honesto y nadie lo penaliza.
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ 05 RESULTADOS ============ -->
+      <section class="part">
+        <div class="part__no"><b>05</b>Cierre</div>
+        <div>
+          <h2>Resultados y aprendizajes</h2>
+          <p>El equipo resultante es más compacto, transportable e instalable, con el mismo desempeño térmico que la configuración original.</p>
+          <div class="todo">
+            <b>Por completar</b>
+            Cierra con lo que aprendiste, incluyendo lo que saliera mal. Una iteración que falló y cómo la corregiste vale más ante un reclutador técnico que una lista de logros impecables. También menciona qué harías distinto hoy.
+          </div>
+        </div>
+      </section>
+
+      <div class="siguiente">
+        <a class="back" href="index.html">← Todos los proyectos</a>
+        <span class="tag">Hoja 01 / 04</span>
+      </div>
+
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  <div class="wrap rev">
+    <span class="tag">Jazu Dynamics · Josué Herrera</span>
+    <span class="tag">Rev. A · <span id="anio">2026</span></span>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
