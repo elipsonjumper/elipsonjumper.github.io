@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fuselaje de avión a escala — JAZU DYNAMICS</title>
+<meta name="description" content="Diseño aerodinámico y estructural de un fuselaje a escala, validado con CFD y FEM.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,400..900&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="sky" aria-hidden="true"></div>
+<div class="stars" aria-hidden="true"></div>
+
+<aside class="alt" aria-hidden="true">
+  <div class="alt__rail"><span class="alt__marks"></span></div>
+  <div class="alt__read"><b id="altVal">35 786</b><span>km</span></div>
+  <div class="alt__zone" id="altZone">Órbita geoestacionaria</div>
+</aside>
+
+<header class="bar">
+  <div class="wrap bar__in">
+    <a class="bar__name" href="index.html">JAZU DYNAMICS</a>
+    <nav class="bar__nav">
+      <a class="back" href="index.html">← Todos los proyectos</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <div class="phead">
+    <div class="wrap">
+      <div class="phead__meta">
+        <span class="tag tag--amber">Hoja 02 / 04</span>
+        <span class="tag">Aerodinámica · Estructuras</span>
+        <span class="tag">Ago – Dic 2024</span>
+      </div>
+      <h1>Fuselaje de avión a escala</h1>
+      <p>Diseño de una aeronave a escala partiendo de principios aerodinámicos, acotada por el empuje disponible del motor asignado, con validación estructural por elemento finito.</p>
+
+      <div class="datos">
+        <div class="dato"><b>2,5</b><span>Factor de seguridad</span></div>
+        <div class="dato"><b>CFD</b><span>Sustentación y arrastre</span></div>
+        <div class="dato"><b>FEM</b><span>Estructura y vibración</span></div>
+        <div class="dato"><b>Tec</b><span>Concentración aeronáutica</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="pbody">
+    <div class="wrap">
+
+      <section class="part">
+        <div class="part__no"><b>01</b>Planteamiento</div>
+        <div>
+          <h2>Diseñar hacia atrás desde el motor</h2>
+          <p>El proyecto partía de una restricción dura: el empuje disponible del motor asignado. Ese número fija el peso máximo que la aeronave puede levantar, y de ahí se desprende todo lo demás. No se diseña la forma y luego se busca cómo volarla; se diseña sabiendo cuánta fuerza hay disponible.</p>
+          <p>El fuselaje quedó entonces atrapado entre dos exigencias opuestas: tenía que ser ligero para caber dentro del presupuesto de empuje, y suficientemente rígido para no fallar en vuelo.</p>
+
+          <div class="todo">
+            <b>Por completar</b>
+            Agrega los números de partida: empuje del motor, envergadura, peso objetivo y velocidad de crucero prevista. Con esos datos el lector entiende de inmediato la dificultad del problema.
+          </div>
+        </div>
+      </section>
+
+      <section class="part">
+        <div class="part__no"><b>02</b>Diseño</div>
+        <div>
+          <h2>Geometría y selección de material</h2>
+          <p>Diseñé el fuselaje optimizando peso y propiedades mecánicas para garantizar un desempeño confiable con un factor de seguridad de 2,5, un margen razonable para una aeronave experimental que va a operar fuera de condiciones ideales.</p>
+
+          <figure class="fig">
+            <div class="fig__hueco">Captura del modelo CAD<br>Vista lateral y corte del fuselaje</div>
+            <figcaption><b>Fig. 01</b> Geometría del fuselaje y disposición interna.</figcaption>
+          </figure>
+
+          <div class="todo">
+            <b>Por completar</b>
+            Explica el material elegido y por qué, cómo distribuiste las cuadernas o refuerzos, y qué geometrías descartaste. Si iteraste el perfil buscando reducir arrastre, ese proceso es lo más interesante que puedes contar aquí.
+          </div>
+        </div>
+      </section>
+
+      <section class="part">
+        <div class="part__no"><b>03</b>Simulación</div>
+        <div>
+          <h2>CFD y elemento finito</h2>
+          <p>Evalué el comportamiento del fuselaje bajo distintas condiciones mediante análisis CFD y FEM: resistencia aerodinámica, sustentación, respuesta vibratoria y el peso de los componentes montados.</p>
+          <p>El objetivo no era solo confirmar que la estructura aguantaba, sino entender dónde estaba el margen sobrante para poder quitar material sin comprometer la seguridad.</p>
+
+          <figure class="fig">
+            <div class="fig__hueco">Captura de Ansys Fluent<br>Líneas de corriente o campo de presión</div>
+            <figcaption><b>Fig. 02</b> Análisis aerodinámico externo del fuselaje.</figcaption>
+          </figure>
+
+          <figure class="fig">
+            <div class="fig__hueco">Captura de Ansys Structural<br>Esfuerzos o modos de vibración</div>
+            <figcaption><b>Fig. 03</b> Distribución de esfuerzos bajo carga de vuelo.</figcaption>
+          </figure>
+
+          <div class="todo">
+            <b>Por completar</b>
+            Documenta las condiciones de frontera, el modelo de turbulencia y las cargas aplicadas. Si obtuviste coeficientes de sustentación y arrastre, ponlos: son la moneda de cambio de cualquier conversación aeronáutica.
+          </div>
+        </div>
+      </section>
+
+      <section class="part">
+        <div class="part__no"><b>04</b>Campo</div>
+        <div>
+          <h2>Construcción y prueba</h2>
+          <div class="todo">
+            <b>Por completar</b>
+            Si el avión se construyó y voló, aquí van las fotos y qué tan cerca estuvo la realidad de la simulación. Esa comparación entre lo predicho y lo medido es lo más valioso que tiene este proyecto. Si no llegó a volar, explica hasta dónde llegó.
+          </div>
+        </div>
+      </section>
+
+      <section class="part">
+        <div class="part__no"><b>05</b>Cierre</div>
+        <div>
+          <h2>Resultados y aprendizajes</h2>
+          <p>El fuselaje cumplió el objetivo de desempeño dentro de las limitaciones de empuje impuestas, manteniendo un factor de seguridad de 2,5.</p>
+          <div class="todo">
+            <b>Por completar</b>
+            Cierra con lo aprendido. Si alguna iteración falló o algún supuesto resultó equivocado al simular, cuéntalo: demuestra criterio, no debilidad.
+          </div>
+        </div>
+      </section>
+
+      <div class="siguiente">
+        <a class="back" href="index.html">← Todos los proyectos</a>
+        <a class="back" href="proyecto-03.html">Siguiente hoja →</a>
+      </div>
+
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  <div class="wrap rev">
+    <span class="tag">Jazu Dynamics · Josué Herrera</span>
+    <span class="tag">Rev. A · <span id="anio">2026</span></span>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

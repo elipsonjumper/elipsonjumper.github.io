@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tobera para motor de cohete tipo H — JAZU DYNAMICS</title>
+<meta name="description" content="Diseño y cálculo de una tobera convergente-divergente para un motor de cohete tipo H.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,400..900&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="sky" aria-hidden="true"></div>
+<div class="stars" aria-hidden="true"></div>
+
+<aside class="alt" aria-hidden="true">
+  <div class="alt__rail"><span class="alt__marks"></span></div>
+  <div class="alt__read"><b id="altVal">35 786</b><span>km</span></div>
+  <div class="alt__zone" id="altZone">Órbita geoestacionaria</div>
+</aside>
+
+<header class="bar">
+  <div class="wrap bar__in">
+    <a class="bar__name" href="index.html">JAZU DYNAMICS</a>
+    <nav class="bar__nav">
+      <a class="back" href="index.html">← Todos los proyectos</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <div class="phead">
+    <div class="wrap">
+      <div class="phead__meta">
+        <span class="tag tag--amber">Hoja 03 / 04</span>
+        <span class="tag">Propulsión</span>
+        <span class="tag">Ago – Dic 2024</span>
+      </div>
+      <h1>Tobera para motor de cohete tipo H</h1>
+      <p>Prototipo CAD de una tobera convergente-divergente, dimensionada a partir del cálculo de sus parámetros de operación, desarrollado en Monterrey Rocket Lab.</p>
+
+      <div class="datos">
+        <div class="dato"><b>C-D</b><span>Geometría convergente-divergente</span></div>
+        <div class="dato"><b>A*</b><span>Área de garganta calculada</span></div>
+        <div class="dato"><b>M</b><span>Número de Mach de salida</span></div>
+        <div class="dato"><b>Tipo H</b><span>Clase de motor</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="pbody">
+    <div class="wrap">
+
+      <section class="part">
+        <div class="part__no"><b>01</b>Planteamiento</div>
+        <div>
+          <h2>Por qué la garganta lo decide todo</h2>
+          <p>En una tobera convergente-divergente, el flujo se acelera hasta alcanzar exactamente la velocidad del sonido en la sección más estrecha, la garganta. A partir de ahí, y solo a partir de ahí, la expansión del área vuelve supersónico al flujo. Esa sección mínima es la que fija cuánto gasto másico puede pasar y, con él, el empuje disponible.</p>
+          <p>Dimensionar la tobera es entonces resolver una cadena: de la química del propelente salen temperatura y presión de cámara, de ahí el área de garganta, y de la relación de expansión el número de Mach a la salida.</p>
+
+          <div class="todo">
+            <b>Por completar</b>
+            Especifica el motor tipo H con el que trabajaste: impulso total, propelente y empuje objetivo. También la restricción de fabricación, si la había.
+          </div>
+        </div>
+      </section>
+
+      <section class="part">
+        <div class="part__no"><b>02</b>Cálculo</div>
+        <div>
+          <h2>Parámetros de operación</h2>
+          <p>Calculé las condiciones de operación requeridas: temperatura y presión de cámara, área de garganta y número de Mach. Con esos valores quedó definida la geometría completa del perfil convergente y divergente.</p>
+
+          <div class="todo">
+            <b>Por completar</b>
+            Pon los valores numéricos que obtuviste y las hipótesis que usaste: flujo isentrópico, gas ideal, relación de calores específicos. Si hiciste la memoria de cálculo en Excel o Python, puedes subir el archivo al repositorio y enlazarlo aquí.
+          </div>
+        </div>
+      </section>
+
+      <section class="part">
+        <div class="part__no"><b>03</b>Diseño</div>
+        <div>
+          <h2>Del cálculo al prototipo CAD</h2>
+          <p>Traduje los resultados a un modelo CAD del prototipo, listo para su fabricación.</p>
+
+          <figure class="fig">
+            <div class="fig__hueco">Captura del modelo CAD<br>Corte longitudinal de la tobera</div>
+            <figcaption><b>Fig. 01</b> Perfil convergente-divergente con la garganta acotada.</figcaption>
+          </figure>
+
+          <div class="todo">
+            <b>Por completar</b>
+            Explica el criterio del perfil divergente: cónico o de campana, ángulo elegido y por qué. También el material y el método de fabricación previsto, que en toberas condiciona la geometría tanto como la aerodinámica.
+          </div>
+        </div>
+      </section>
+
+      <section class="part">
+        <div class="part__no"><b>04</b>Cierre</div>
+        <div>
+          <h2>Resultados y aprendizajes</h2>
+          <div class="todo">
+            <b>Por completar</b>
+            Si el motor se probó en banco, aquí van los datos y las fotos. Si el proyecto quedó en diseño, dilo y explica qué faltaría para llevarlo a prueba. Cierra con lo que aprendiste sobre flujo compresible trabajando en esto.
+          </div>
+        </div>
+      </section>
+
+      <div class="siguiente">
+        <a class="back" href="index.html">← Todos los proyectos</a>
+        <a class="back" href="proyecto-04.html">Siguiente hoja →</a>
+      </div>
+
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  <div class="wrap rev">
+    <span class="tag">Jazu Dynamics · Josué Herrera</span>
+    <span class="tag">Rev. A · <span id="anio">2026</span></span>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
