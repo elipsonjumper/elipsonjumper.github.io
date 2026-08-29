@@ -241,3 +241,6 @@ footer{padding:26px 0 40px}
 
 /* pie de navegación */
 .siguiente{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;padding:30px 0;border-top:1px solid var(--line)}
+
+/* imagen propia dentro del marco técnico del hero */
+.plate__img{display:block;width:100%;height:auto;background:#000}
